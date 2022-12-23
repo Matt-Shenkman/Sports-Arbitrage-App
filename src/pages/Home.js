@@ -1,21 +1,22 @@
 import { useState } from 'react'
 import { useEffect } from 'react';
-import { Tabs, Tab } from '@material-ui/core';
+import { Route, Routes } from 'react-router-dom';
+import Header from './Header';
+import SubHeader from './SubHeader';
 
 function HomePage() {
     
   return (
-    <div>
-    <div>
-      <Tab label="Home" />
-      <Tab label="About" />
-      <Tab label="Contact" />
-    </div>
-        <div class = "body">
+        <div>
+            <Routes id = 'routes'>
+            <Route path="/" element={<Header/>} />
+            <Route path="/" element={<SubHeader/>} />
+            </Routes>
+
+            <div class = "body">
             
+            </div>
         </div>
-    </div>
-    
     );
 
 }
