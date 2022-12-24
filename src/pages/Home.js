@@ -8,15 +8,13 @@ function HomePage() {
     
   return (
         <div>
-            <Routes id = 'routes'>
-            <Route path="/" element={<Header/>} />
-            <Route path="/" element={<SubHeader/>} />
-            </Routes>
-
-            <div class = "body">
+            <body>
+                <Header/>
+                <SubHeader/>
+            </body>
             
-            </div>
         </div>
+        
     );
 
 }
